@@ -1,20 +1,20 @@
 let transactions = [];
 let myChart;
 
-fetch("/api/transaction")
-  .then(response => {
-    return response.json();
-  })
-  .then(data => {
-    // save db data on global variable
-    transactions = data;
+fetch( "/api/transaction")
+.then(response => {
+  return response.json();
+})
+.then(data => {
+	transactions = data;
 
-    populateTotal();
-    populateTable();
-    populateChart();
-  });
+  populateTotal();
+  populateTable();
+  populateChart();
+});
 
 function populateTotal() {
+	console.log(transactions);
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
     return total + parseInt(t.value);
@@ -79,6 +79,7 @@ function populateChart() {
 }
 
 function sendTransaction(isAdding) {
+	// console.log("sending Transaction");
   let nameEl = document.querySelector("#t-name");
   let amountEl = document.querySelector("#t-amount");
   let errorEl = document.querySelector(".form .error");
@@ -122,6 +123,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
+  	// console.log(response);
     return response.json();
   })
   .then(data => {
@@ -135,6 +137,7 @@ function sendTransaction(isAdding) {
     }
   })
   .catch(err => {
+  	// console.log(err);
     // fetch failed, so save in indexed db
     saveRecord(transaction);
 
