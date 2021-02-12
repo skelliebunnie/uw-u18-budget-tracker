@@ -1,8 +1,8 @@
 # U18 Budget Tracker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![last-commit](https://img.shields.io/github/last-commit/skelliebunnie/uw-u18-budget-tracker)]
-[![languages-count](https://img.shields.io/github/languages/count/skelliebunnie/uw-u18-budget-tracker)]
-[![languages-top](https://img.shields.io/github/languages/top/skelliebunnie/uw-u18-budget-tracker)]
+![last-commit](https://img.shields.io/github/last-commit/skelliebunnie/uw-u18-budget-tracker)
+![languages-count](https://img.shields.io/github/languages/count/skelliebunnie/uw-u18-budget-tracker)
+![languages-top](https://img.shields.io/github/languages/top/skelliebunnie/uw-u18-budget-tracker)
 
 ## Description
 A simple PWA budget app that allows the user to enter transactions even offline, saving them in IndexedDB until a connection is restored.
