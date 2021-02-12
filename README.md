@@ -7,6 +7,9 @@
 ## Description
 A simple PWA budget app that allows the user to enter transactions even offline, saving them in IndexedDB until a connection is restored.
 
+## Deployment
+[Live on Heroku](https://powerful-river-91365.herokuapp.com/)
+
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
